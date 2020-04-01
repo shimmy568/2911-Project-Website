@@ -1,310 +1,99 @@
-# hexo-theme-snail
-[View Live Super Snail Blog →](https://www.dusign.net)
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-**Light theme preview**
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-![hexo-theme-snail](./img/snail-light.png)
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-**Dark theme preview**
+## 🚀 Quick start
 
-![hexo-theme-snail](./img/snail-dark.png)
+1.  **Create a Gatsby site.**
 
-**Star theme preview**
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-![hexo-theme-snail](./img/snail-star.png)
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-Hexo-theme-snail is a succinct hexo theme. It has two colors, light and star, that can be set according to your own preferences in the settings, and also has the functions of sharing and commenting. More features are under development.
+1.  **Start developing.**
 
-## Features
-- light color theme and star theme
-- diversified comment system
-- notice tips
-- sharing to other platforms (under development)
-- picture sharing (under development)
+    Navigate into your new site’s directory and start it up.
 
-## Quick Start
-### Install Hexo
-```bash
-$ npm install hexo-cli -g
-```
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-### Setup your blog
-```bash
-$ hexo init blog
-```
+1.  **Open the source code and start editing!**
 
-### Installation Theme
-```bash
-$ cd blog
-$ rm -rf source
-$ rm _config.yml package.json README.md LICENSE
-$ git clone https://github.com/dusign/hexo-theme-snail.git
-$ mv ./hexo-theme-snail/snail ./themes
-$ mv ./hexo-theme-snail/* ./
-$ npm install
-```
+    Your site is now running at `http://localhost:8000`!
 
-### Install Mathjax
-To install Mathjax, please click https://www.dusign.net/2019/10/14/Hexo-Configuration/ for a detailed tutorial.
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-### Install WordCount
-```
-npm install hexo-wordcount --save
-```
-See https://github.com/willin/hexo-wordcount for detailed configuration method.
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-### Set Theme
-Modify the value of `theme:` in `_config.yml`
-```yml
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: snail
-```
+## 🧐 What's inside?
 
-### Start the Server
-```bash
-$ hexo generate
-$ hexo server
-```
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-## Configuration
-### Site
-Replace the following information with your own.
-```yml
-# Site
-title: 
-subtitle: At the bottom of the well, it is destined to see only the sky at the wellhead. 
-          However, the starting point only affects the process of reaching your peak and does not determine the height you reach.
-author: Dusign
-language: en
-timezone:
-```
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-### Site Settings
-Put customized pictures in `img` directory.
-```yml
-# Site settings
-SEOTitle: Hexo-theme-snail
-email: hexo-theme-snail@mail.com
-description: "A hexo theme"
-keyword: "dusign, hexo-theme-snail"
-header-img: img/header_img/home-bg-1-dark.jpg
-signature: true #show signature
-signature-img: img/signature/dusign.png
-```
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-### SNS Settings
-If you don't want to display it, you can delete it directly.
-```yml
-# SNS settings
-github_username:    dusign
-twitter_username:   dusignr
-facebook_username:  Gang Du
-zhihu_username: dusignr
-```
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-### Sidebar Settings
-```yml
-# Sidebar Settings
-sidebar: true                      # whether or not using Sidebar.
-sidebar-about-description: "Welcome to visit, I'm Dusign!"
-sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
-widgets:
-- search
-- featured-tags
-- short-about
-- visitor
-- recent-posts
-- friends-blog
-- archive
-- category
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-# widget behavior
-## Archive
-archive_type: 'monthly'
-show_count: true
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-## Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-## Friends
-friends: [
-    {
-        title: "Dusign's Blog",
-        href: "https://blog.csdn.net/d_Nail"
-    },{
-        title: "Dusign's Web",
-        href: "#"
-    },{
-        title: "Dusign's Github",
-        href: "https://github.com/dusign"
-    },{
-        title: "Other",
-        href: "#"
-    }
-]
-```
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-### Theme
-```yml
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: snail
-```
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-### Deployment
-```yml
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo:
-      github: github.repository.address
-      coding: coding.repository.address
-  branch: master
-```
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-### Share
-```yml
-## Share
-share: true
-```
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-### Comment
-See https://github.com/imsun/gitment for detailed configuration method.
-```yml
-# Comment
-## This comment system is gitment
-## gitment url: https://github.com/imsun/gitment
-comment:
-  gitment:
-    enable: false
-    owner:
-    repo:
-    client_id:
-    client_secret:
-  livere:
-    enable: false
-  disqus:
-    enable: false
-    username:
-```
+12. **`README.md`**: A text file containing useful reference information about your project.
 
-### Tip
-```yml
-# Tip
-tip:
-  enable: true
-  copyright: This is copyright.
-  content: false
-```
+## 🎓 Learning Gatsby
 
-### Background effects
-Set the `enable` value of the desired color sheme to `true`. If the value of `bg_effects.star.enable` is `true`, please modify the value of `highlight_theme` in `./themes/snail/_config.yml` to `night`.
-```yml
-# Background effects
-## If there is no effect after modification, please empty the cache and try again.
-## ⚠️ The following special effects will take up a lot of cpu resorces, please open it carefully.
-bg_effects:
-  enable: true
-  line:
-    enable: false
-    color: 129,200,61
-    pointColor: 129,200,61
-    opacity: 0.7
-    zIndex: -9
-    count: 99
-  mouse_click:
-    enable: true
-    content: '"🌱","just do it","🍀"'
-    color: '"rgb(121,93,179)"
-          ,"rgb(76,180,231)"
-          ,"rgb(184,90,154)"'
-  wave:
-    enable: true
-```
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-### Visitor statistics
-```yml
-# Visitor statistics
-visitor:
-  enable: true
-  type: 
-```
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-### Color Theme
-```
-# Color Theme
-## light , dark or star
-## If you set the value of the `color_theme` to `dark`, set the value of the `highlight_theme` to `night` in `/theme/snail/config.yml`
-## `mouse_control` is only valid for star themes
-color_theme: light
-mouse_control: false
-```
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-### Search
-run `$ npm install hexo-generator-search --save`
-then add the follow configure to `_config.yml`
-```yml
-## Search
-search:
-  enable: true
-  path: search.xml
-  field: post
-  content: true
-```
-- path - file path. By default is search.xml . If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.
-- field - the search scope you want to search, you can chose:
-  - post (Default) - will only covers all the posts of your blog.
-  - page - will only covers all the pages of your blog.
-  - all - will covers all the posts and pages of your blog.
-- content - whether contains the whole content of each article. If false, the generated results only cover title and other meta info without mainbody. By default is true.
+## 💫 Deploy
 
-### Error and Solutions
-- run `hexo deploy` with "ERROR Deployer not found: git"
-solution: `npm install --save hexo-deployer-git`
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-### Top
-Hexo-theme-snail has added the article top function, just add the following content in the article head.
-```yml
-top: true
-```
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
-## Releases
-v1.3
-- fix *category* jump path issue in sidebar
-- add a default image for new articles
-- add *photography* (under development)
-- fix *top* and *page* conflict
-
-v1.2
-- fix the bug
-- add *search* within site
-- add *top*
-- image wave effect
-- add *share*
-- add dark theme
-
-v1.1
-- change title font-family
-- add *wordcount*
-- add visitor statistics
-- fix the bug (*categories* not display)
-- replacing mathjax with marked
-
-v1.0
-- fix the bugs
-- add comment system
-- add notice tips
-- add star theme
-- add line theme (background effect)
-- add mouse-click effect
-
-## License
-Apache License 2.0 Copyright(c) 2018-2020 [dusign](https://github.com/dusign)   
-[hexo-theme-snail](https://github.com/dusign/hexo-theme-snail) is derived from [hexo-theme-beantech](https://github.com/YenYuHsuan/hexo-theme-beantech) ，thanks [YenYuHsuan](https://github.com/YenYuHsuan).
+<!-- AUTO-GENERATED-CONTENT:END -->
