@@ -1,6 +1,20 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const HeaderLinkContainer = styled.h1`
+  margin: 0;
+`
+
+const HeaderLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+    color: light-grey;
+  }
+`
 
 const Header = ({ siteTitle }) => (
   <header
@@ -11,22 +25,14 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0 50px`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <HeaderLinkContainer>
+        <HeaderLink to="/">{siteTitle}</HeaderLink>
+      </HeaderLinkContainer>
     </div>
   </header>
 )
