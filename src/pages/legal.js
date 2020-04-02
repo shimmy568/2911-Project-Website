@@ -7,7 +7,7 @@ const LegalPage = () => (
   <Layout>
     <SEO title="Legal" />
     <h1>LEGAL PAGE</h1>
-    <p>TODO</p>
+    <p>TODO. Jared test</p>
   </Layout>
 )
 
