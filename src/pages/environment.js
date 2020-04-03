@@ -23,6 +23,7 @@ const EnvironmentPage = () => (
       <PageTitle>Environmental Concerns With IOT</PageTitle>
     </div>
     <p>TODO</p>
+    <div> Nick C has added stuff </div>
   </Layout>
 )
 
