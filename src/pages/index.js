@@ -4,16 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IOTLogoImage from "../components/images/IOTLogoImage"
 import IndexCard from "../components/IndexCard"
-import styled from "styled-components"
 import { Grid } from "@material-ui/core"
+import styled from "styled-components"
+import {
+  ImageContainer as ImageContainerRaw,
+  PageTitle,
+} from "../components/shared"
 
-const ImageContainer = styled.div`
+const ImageContainer = styled(ImageContainerRaw)`
   max-width: 500px;
-  margin: auto;
-`
-
-const PageTitle = styled.h1`
-  text-align: center;
 `
 
 const IndexPage = () => (
@@ -25,7 +24,7 @@ const IndexPage = () => (
       </ImageContainer>
       <PageTitle>Ethics Surrounding Modern IOT Devices</PageTitle>
     </div>
-    <p>TODO Put Introduction stuffs here</p>
+    <p>TODO Put Introductiony stuffs here</p>
     <Grid container spacing={3}>
       <Grid item xs={6}>
         <IndexCard
