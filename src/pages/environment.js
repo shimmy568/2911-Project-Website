@@ -2,11 +2,9 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  ImageContainer as ImageContainerRaw,
-  PageTitle,
-} from "../components/shared"
+import { ImageContainer as ImageContainerRaw } from "../components/shared"
 import styled from "styled-components"
+import { Typography } from "@material-ui/core"
 import EnvironmentPageLogo from "../components/images/EnvironmentPageLogo"
 
 const ImageContainer = styled(ImageContainerRaw)`
@@ -20,7 +18,9 @@ const EnvironmentPage = () => (
       <ImageContainer>
         <EnvironmentPageLogo />
       </ImageContainer>
-      <PageTitle>Environmental Concerns With IOT</PageTitle>
+      <Typography variant="h3" component="h1" align="center">
+        Environmental Concerns With IOT
+      </Typography>
     </div>
     <p>There is lots TODO</p>
     <div> Nick C has added stuff </div>
