@@ -234,6 +234,10 @@ const EnvironmentPage = () => (
         this: What does it cost us as a society to support companies that are
         making this planet uninhabitable?
       </Typography>
+
+      <Typography variant="h5" component="h5">
+        References
+      </Typography>
       <ul>
         <li>
           <Typography variant="body1" component="body1">
