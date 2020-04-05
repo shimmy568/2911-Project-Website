@@ -35,7 +35,7 @@ const IndexPage = () => (
     </div>
     <BodyContainer>
       <PaddedDivider />
-      <Typography variant="h3" component="h3">
+      <Typography variant="h5" component="h5">
         What Is IoT
       </Typography>
       <Typography
