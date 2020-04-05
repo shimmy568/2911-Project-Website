@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: "/2911-Project-Website",
   siteMetadata: {
     title: `IOT Explained`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `An introduction to the ethical issues surrounding the new felid of IoT devices`,
+    author: `Shimmy568`,
   },
   plugins: [
     {
