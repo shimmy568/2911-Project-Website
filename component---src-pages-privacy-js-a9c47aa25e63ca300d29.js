@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{qTMf:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("Bl7J"),c=t("vrFN");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Privacy"}),l.a.createElement("h1",null,"PRIVACY PAGE"),l.a.createElement("p",null,"TODO"))}}}]);
-//# sourceMappingURL=component---src-pages-privacy-js-a9c47aa25e63ca300d29.js.map
