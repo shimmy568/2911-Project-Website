@@ -24,6 +24,7 @@ const EnvironmentPage = () => (
     </div>
     <p>There is lots TODO</p>
     <div> Nick C has added stuff </div>
+    <p> Nick C was here </p> 
   </Layout>
 )
 
