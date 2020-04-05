@@ -162,7 +162,7 @@ const PrivacyPage = () => (
         <Typography variant="body1" component="body1">
           [2](
           <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5972157/">
-            Child bedroom hack
+            Ethical Design in the Internet of Things
           </a>
           ):
         </Typography>
