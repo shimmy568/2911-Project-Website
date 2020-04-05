@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/2911-Project-Website",
   siteMetadata: {
     title: `IOT Explained`,
     description: `An introduction to the ethical issues surrounding the new felid of IoT devices`,
